@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
+  "git":"https://github.com/kksrini89/ng2-RecipeBook.git",
   "scripts": {
     "start": "ng serve",
     "postinstall": "typings install",
