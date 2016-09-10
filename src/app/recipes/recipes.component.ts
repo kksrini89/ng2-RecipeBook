@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { RecipeListComponent } from './recipe-list';
 import { RecipeDetailComponent } from './recipe-detail';
+// import { ShoppingListComponent } from './shopping-list';
 import { Recipe } from './recipe';
 
 @Component({
