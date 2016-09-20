@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { RecipeItemComponent } from './recipe-item.component';
 import { Recipe } from '../recipe';
@@ -8,7 +9,7 @@ import { RecipeService } from '../recipe.service';
   moduleId: module.id,
   selector: 'rb-recipe-list',
   templateUrl: 'recipe-list.component.html',
-  directives :[RecipeItemComponent]
+  directives :[RecipeItemComponent,ROUTER_DIRECTIVES]
 })
 export class RecipeListComponent implements OnInit {
   
