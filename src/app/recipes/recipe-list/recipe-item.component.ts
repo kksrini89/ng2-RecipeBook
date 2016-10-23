@@ -1,21 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Component, Input } from '@angular/core';
 
 import { Recipe } from '../recipe';
 
 @Component({
-  moduleId: module.id,
   selector: 'rb-recipe-item',
-  templateUrl: 'recipe-item.component.html',
-  directives:[ROUTER_DIRECTIVES]
+  templateUrl: 'recipe-item.component.html'
 })
-export class RecipeItemComponent implements OnInit {
-  @Input() recipe:Recipe;
-  @Input() recipeId:number = 1;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class RecipeItemComponent {
+  @Input() recipe: Recipe;
+  @Input() recipeId: number;
 }

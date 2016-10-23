@@ -1,14 +1,14 @@
-import { RecipeBookPage } from './app.po';
+import { Ng2RecipeBookLatestPage } from './app.po';
 
-describe('recipe-book App', function() {
-  let page: RecipeBookPage;
+describe('ng2-recipe-book-latest App', function() {
+  let page: Ng2RecipeBookLatestPage;
 
   beforeEach(() => {
-    page = new RecipeBookPage();
+    page = new Ng2RecipeBookLatestPage();
   });
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('rb works!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
